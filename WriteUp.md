@@ -34,9 +34,9 @@ Write up Rubric points:
 
 	To see an example, look below:
 
-![alt text][image1]
+[image1]
 
-![alt text][image2]
+[image2]
 
 **Pipeline**
 #Rubric Criteria 4
