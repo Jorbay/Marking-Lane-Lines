@@ -29,14 +29,15 @@ Write up Rubric points:
 **Camera Calibration and Undistortion**
 #Rubric Criteria 2 and 3
 	As with all lens cameras, the camera we used for this project creates slightly distorted pictures. Luckily, the same person who filmed the car driving also took pictures of chessboards at several orientations. The corners of every square of a chessboard are regularly spaced out, so I can assume that they should appear as a regular grid. However, because of camera distortion, the chessboard does not appear exactly like a regular grid. I solved this problem in the first cell of the jupyter notebook file "LaneLines_script".
-
 	I first create a set of points called objpoints, which maps out where I expect to find the chessboard's square's corners, and imgpoints, which maps out where the corners are actually found. For both sets of points, I map them out in 3D space and estimate their position in depth as z=0.  I then use the open cv function calibrateCamera, which takes in both sets of points and returns the camera matrix (a matrix that contains the focal lengths and optical centers of the camera; multiplying any pixel vector by the camera matrix will return the "undistorted" position of the pixel in reality). To undistort, I used the simpler method of using opencv's undistort method, which takes in the distorted picture and the camera matrix.
 
-	To see an example, look below:
+	To see an example, look below.
 
-[image1]
+![alt text][image1]
+Distorted
 
-[image2]
+![alt text][image2]
+Undistorted
 
 **Pipeline**
 #Rubric Criteria 4
